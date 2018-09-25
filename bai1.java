@@ -55,5 +55,5 @@ public class bai1 {
     int n = sc.nextInt(); 
     hihi.Fibonaci(n);  //gọi hàm in ra số Fibonaci;
     
-    }
+    } 
 }
