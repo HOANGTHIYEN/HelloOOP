@@ -47,11 +47,10 @@ public class ps {
         t.mau = p.mau*this.mau;
         return t;
     }
-     public boolean equals(ps p1, ps p2){
-        if((p1.tu/p1.mau)==(p2.tu/p2.mau)) {
-            return true;
-        } else {
-            return  false;
-        }
-    }
+     public boolean equals( Object obj) {
+            if(obj instanceof ps){    
+            ps p=(ps)obj;
+		if ( this.getTu() * p.getMau() == this.getMau() * p.getTu()) return true;}
+                return false;
+	}
 }
